@@ -96,7 +96,7 @@ def compare_and_return_fourth_vector(word1,word2,word3, similarity_type):
         '''
             average of all distances comparison
         '''
-        initial_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[dataframe.columns[0]]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[dataframe.columns[0]]))/3 # initialise
+        initial_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]))/3 # initialise
         word = list(dataframe.keys())[0]
         for i in dataframe:
             if i != word3:

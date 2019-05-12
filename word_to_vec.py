@@ -48,4 +48,7 @@ def normalize_word_to_vec(model_file):
     return normalized_dct
 
 if __name__ == '__main__':
-    print(word_to_vec_dict('smaller_model.txt'))
+    df = word_to_vec_dict('smaller_model.txt')
+    df_norm = normalize_word_to_vec('vector_model_5_10.txt')
+    print(df['rapidly'])
+    print(df_norm['rapidly'])
