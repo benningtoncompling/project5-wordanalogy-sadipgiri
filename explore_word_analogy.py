@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+'''
+    Python3 program to explore different optimization technique for faster word analogy operation
+        here, I tried Pandas Dataframe (Matrix form) that gave faster C-level normalization however, took time to compare!
+    Author: Sadip Giri (sadipgiri@bennington.edu)
+    Date: 10th May, 2019
+'''
+
 import pandas as pd
 import numpy as np
 import os
