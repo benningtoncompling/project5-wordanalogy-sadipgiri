@@ -82,11 +82,11 @@ def compare_and_return_fourth_vector(word1,word2,word3, similarity_type):
         '''
             cosine distance comparison
         '''
-        initial_dist = cosine_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) # initialise
+        initial_dist = cosine_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]], normalized=should_normalize) # initialise
         word = list(dataframe.keys())[0]
         for i in dataframe:
-            if i != word3:
-                temp_cosine_dist = cosine_dist(vector_1=predicted_vect,vector_2=dataframe[i])
+            if i != word3 and i != word1:
+                temp_cosine_dist = cosine_dist(vector_1=predicted_vect,vector_2=dataframe[i], normalized=should_normalize)
                 if temp_cosine_dist < initial_dist:
                     word = i
                     initial_dist = temp_cosine_dist
@@ -96,11 +96,11 @@ def compare_and_return_fourth_vector(word1,word2,word3, similarity_type):
         '''
             average of all distances comparison
         '''
-        initial_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]))/3 # initialise
+        initial_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[list(dataframe.keys())[0]], normalized=should_normalize))/3 # initialise
         word = list(dataframe.keys())[0]
         for i in dataframe:
             if i != word3:
-                temp_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[i]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[i]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[i]))/3
+                temp_avg_dist = (euclidean_dist(vector_1=predicted_vect, vector_2=dataframe[i]) + manhattan_dist(vector_1=predicted_vect, vector_2=dataframe[i]) + cosine_dist(vector_1=predicted_vect, vector_2=dataframe[i], normalized=should_normalize))/3
                 if temp_avg_dist < initial_avg_dist:
                     word = i
                     initial_avg_dist = temp_avg_dist

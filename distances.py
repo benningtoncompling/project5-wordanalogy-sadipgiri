@@ -33,16 +33,22 @@ def manhattan_dist(vector_1, vector_2):
     '''
     return np.sum(np.abs(vector_2 - vector_1))
 
-def cosine_dist(vector_1, vector_2):
+def cosine_dist(vector_1, vector_2, normalized = 1):
     '''
         Cosine similarity is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them.
-        Mathematically, it's dot product between two vectors.
+        Mathematically, it's dot product between two vectors after normalization (converting two vectors into their respective unit vectors)
     '''
-    return np.dot(vector_1, vector_2)
+    if normalized == 1:
+        return np.dot(vector_1, vector_2)
+    return np.dot(vector_1, vector_2)/(magnitude(vector_1) * magnitude(vector_2))
+
+def magnitude(vector):
+    return np.sqrt(np.sum(np.square(vector)))
 
 if __name__ == '__main__':
-    v1 = np.array([i for i in range(100) if i % 2 == 0])
-    v2 = np.array([i for i in range(100) if i % 2 != 0])
+    v1 = np.array([i for i in range(100)])
+    v2 = np.array([i*2 for i in range(100)])
     print(euclidean_dist(v1,v2))
     print(manhattan_dist(v1, v2))
+    print(cosine_dist(v1, v2, normalized=2))
     

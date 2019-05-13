@@ -16,4 +16,4 @@ mkdir output00 output01 output02 output03 output10 output11 output12 output13
 ./word_analogy.py vector_model_5_10.txt /Users/sadipgiri/Desktop/project5-wordanalogy-sadipgiri/GoogleTestSet output10 output10/eval.txt 1 0
 ./word_analogy.py vector_model_5_10.txt /Users/sadipgiri/Desktop/project5-wordanalogy-sadipgiri/GoogleTestSet output11 output11/eval.txt 1 1
 ./word_analogy.py vector_model_5_10.txt /Users/sadipgiri/Desktop/project5-wordanalogy-sadipgiri/GoogleTestSet output12 output12/eval.txt 1 2
-./word_analogy.py vector_model_5_10.txt /Users/sadipgiri/Desktop/project5-wordanalogy-sadipgiri/GoogleTestSet output13 output12/eval.txt 1 3
+./word_analogy.py vector_model_5_10.txt /Users/sadipgiri/Desktop/project5-wordanalogy-sadipgiri/GoogleTestSet output13 output13/eval.txt 1 3
