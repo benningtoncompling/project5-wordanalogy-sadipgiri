@@ -27,6 +27,16 @@ This project is licensed under the terms of the MIT license.
 
 ### Findings
 
+Among three similarities type:
+    0. Euclidean Distance (L1 Norm)
+    1. Manhattan Distance (L2 Norm)
+    2. Cosine Distance (Dot Product after Normalization)
+    3. Avg of all similarities
+    Using vector_model_5_10.txt:
+        Euclidean(80.69484240687679%) and Cosine(80.69484240687679%) Similarities gave slightly higher accuracy than other similarities such as Manhattan (79.83012689316415%) & Avg() 
+    Its because -> 
+
+Since, vector_model_5_10.txt was already normalized; so, I didn't get to see accuracy differences there. However, I am still running larger word2vec model to further investigate normalization effect!
 
 Some ideas to consider:
 Which similarity metric seemed to work better? Why do you think that is?
