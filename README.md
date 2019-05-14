@@ -28,19 +28,43 @@ This project is licensed under the terms of the MIT license.
 ### Findings
 
 Among three similarities type:
+
     0. Euclidean Distance (L1 Norm)
+
     1. Manhattan Distance (L2 Norm)
+
     2. Cosine Distance (Dot Product after Normalization)
+
     3. Avg of all similarities
+
     Using vector_model_5_10.txt:
-        Euclidean(80.69484240687679%) and Cosine(80.69484240687679%) Similarities gave slightly higher accuracy than other similarities such as Manhattan (79.83012689316415%) & Avg() 
-    Its because -> 
+        Euclidean(80.69484240687679%), Cosine(80.69484240687679%) and Avg(80.04502660663118%) Similarities gave slightly higher accuracy than Manhattan (79.83012689316415%)
 
-Since, vector_model_5_10.txt was already normalized; so, I didn't get to see accuracy differences there. However, I am still running larger word2vec model to further investigate normalization effect!
+Since, vector_model_5_10.txt was already normalized; so, I didn't get to see accuracy differences there. However, I am still running larger word2vec model to further investigate normalization effect! I think its all about ACCURACY vs TIME COMPLEXITY tradeoffs and I consider there won't be big of a difference in accuracy. 
 
-Some ideas to consider:
-Which similarity metric seemed to work better? Why do you think that is?
-What input files did better than others?
-Did normalization help? In what cases?
-If you used a different vector model (more below) what did you notice about your
-results?
+Approaches, Optimizations, Roadblocks:
+- At first, I used Pandas dataframe to read word2vec model; however, there was time complexity issues while comparing predicted word with all existing words. Therefore, I used dictionary with keys: words and values: vectors (represented by numpy array). Why numpy -> it does calcuation in C-level which is obviously faster than normal Python arithmetic.
+
+- Time complexity optimization:
+    - Euclidean Similarity: instead of square_root I just used squares of vectors difference to compare and get most close vector_word -> Faster than square root.
+        - Also, instead of squaring: I explored vector transpose operator for faster calculation:
+                -> euclidean_distance(x, y) = (x − y)T (x − y) where, T is transpose
+
+    - Cosine Distance: while normalization was not unabled, I just used numpy dot product for cosine distance -> faster than dividing by vector's magnitude
+        - NOTE: used 1 - cosine_similarity while averaging all distances (my 3rd similarity type) to get higher acccuracy.
+
+    - Loading vector model: instead of normalizing same vectors over and over; I dynamically read vector model and created a normalized dictionary for faster look up and calculation. I think in long run, this is very helpful and extremely faster (especially, when we have large Word Analogy test files)
+
+- Accuracy Optimization:
+    - Ignored fourth predicted word to not to be third word which gave higher accuracy.
+    - Similarly, ignoring fourth word be first three words -> further increased the accuracy.
+    - Want to:
+        - see if there might be some changes in accuracy using other similarities techniques such as:
+            - Jaccard Similarity
+            - Dice Similarity
+            - KL divergence Similarity, etc. 
+
+- Details/Roadblocks:
+    - Used bash script to automatically run everything at once rather than having to execute same commands one by one.
+    - At first, cosine similarity wasn't working nicely. However, found out that it was because I had to search for the words with higher cosine similarity (credit: Justin). Or could have subtracted by 1 and I would be fine with my initial approach!
+    - I really enjoyed learning/exploring various ways to optimize as well as write meaningful clean code (especially, keeping track of everything!).

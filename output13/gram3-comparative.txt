@@ -6,8 +6,8 @@ bad worse cool cooler
 bad worse deep deeper
 bad worse easy easier
 bad worse fast faster
-bad worse good worse
-bad worse great worse
+bad worse good better
+bad worse great greater
 bad worse hard harder
 bad worse heavy heavier
 bad worse high higher
@@ -32,7 +32,7 @@ bad worse tight tighter
 bad worse tough tougher
 bad worse warm colder
 bad worse weak weaker
-bad worse wide widest
+bad worse wide wider
 bad worse young younger
 big bigger bright brighter
 big bigger cheap cheaper
@@ -142,7 +142,7 @@ cheap cheaper young younger
 cheap cheaper bad worse
 cheap cheaper big bigger
 cheap cheaper bright brighter
-cold colder cool colder
+cold colder cool cooler
 cold colder deep deeper
 cold colder easy easier
 cold colder fast faster
@@ -170,7 +170,7 @@ cold colder strong stronger
 cold colder tall taller
 cold colder tight tighter
 cold colder tough tougher
-cold colder warm colder
+cold colder warm warmer
 cold colder weak weaker
 cold colder wide wider
 cold colder young younger
@@ -186,7 +186,7 @@ cool cooler great greater
 cool cooler hard harder
 cool cooler heavy heavier
 cool cooler high higher
-cool cooler hot cooler
+cool cooler hot hotter
 cool cooler large larger
 cool cooler long shorter
 cool cooler loud louder
@@ -205,7 +205,7 @@ cool cooler strong stronger
 cool cooler tall taller
 cool cooler tight tighter
 cool cooler tough tougher
-cool cooler warm cooler
+cool cooler warm warmer
 cool cooler weak weaker
 cool cooler wide wider
 cool cooler young younger
@@ -213,7 +213,7 @@ cool cooler bad worse
 cool cooler big bigger
 cool cooler bright brighter
 cool cooler cheap cheaper
-cool cooler cold cooler
+cool cooler cold colder
 deep deeper easy easier
 deep deeper fast faster
 deep deeper good better
@@ -322,7 +322,7 @@ fast faster cold colder
 fast faster cool cooler
 fast faster deep deeper
 fast faster easy easier
-good better great better
+good better great greater
 good better hard harder
 good better heavy heavier
 good better high higher
@@ -343,13 +343,13 @@ good better small smaller
 good better smart smarter
 good better strong stronger
 good better tall taller
-good better tight better
+good better tight tighter
 good better tough tougher
 good better warm cooler
 good better weak weaker
 good better wide wider
 good better young younger
-good better bad better
+good better bad worse
 good better big bigger
 good better bright brighter
 good better cheap cheaper
@@ -375,7 +375,7 @@ great greater short shorter
 great greater simple simpler
 great greater slow slower
 great greater small larger
-great greater smart greater
+great greater smart smarter
 great greater strong stronger
 great greater tall taller
 great greater tight tighter
@@ -383,8 +383,8 @@ great greater tough tougher
 great greater warm warmer
 great greater weak weaker
 great greater wide wider
-great greater young greater
-great greater bad greater
+great greater young younger
+great greater bad worse
 great greater big bigger
 great greater bright brighter
 great greater cheap cheaper
@@ -393,7 +393,7 @@ great greater cool cooler
 great greater deep deeper
 great greater easy easier
 great greater fast faster
-great greater good greater
+great greater good better
 hard harder heavy heavier
 hard harder high higher
 hard harder hot hotter
@@ -470,7 +470,7 @@ high higher hot hotter
 high higher large larger
 high higher long shorter
 high higher loud louder
-high higher low higher
+high higher low lower
 high higher new new
 high higher old older
 high higher quick quicker
@@ -529,7 +529,7 @@ hot hotter big bigger
 hot hotter bright brighter
 hot hotter cheap cheaper
 hot hotter cold colder
-hot hotter cool hotter
+hot hotter cool cooler
 hot hotter deep deeper
 hot hotter easy easier
 hot hotter fast faster
@@ -549,7 +549,7 @@ large larger sharp sharper
 large larger short shorter
 large larger simple simpler
 large larger slow slower
-large larger small larger
+large larger small smaller
 large larger smart smarter
 large larger strong stronger
 large larger tall taller
@@ -581,7 +581,7 @@ long longer old older
 long longer quick quicker
 long longer safe safer
 long longer sharp sharper
-long longer short longer
+long longer short shorter
 long longer simple simpler
 long longer slow slower
 long longer small smaller
@@ -658,7 +658,7 @@ low lower small smaller
 low lower smart smarter
 low lower strong stronger
 low lower tall taller
-low lower tight lower
+low lower tight tighter
 low lower tough tougher
 low lower warm warmer
 low lower weak weaker
@@ -669,16 +669,16 @@ low lower big bigger
 low lower bright brighter
 low lower cheap cheaper
 low lower cold colder
-low lower cool lower
+low lower cool cooler
 low lower deep deeper
 low lower easy easier
 low lower fast faster
-low lower good lower
-low lower great lower
+low lower good better
+low lower great greater
 low lower hard harder
 low lower heavy heavier
-low lower high lower
-low lower hot lower
+low lower high higher
+low lower hot hotter
 low lower large larger
 low lower long shorter
 low lower loud louder
@@ -690,7 +690,7 @@ new newer short shorter
 new newer simple simpler
 new newer slow slower
 new newer small smaller
-new newer smart newer
+new newer smart smarter
 new newer strong stronger
 new newer tall taller
 new newer tight tighter
@@ -890,7 +890,7 @@ short shorter heavy heavier
 short shorter high higher
 short shorter hot hotter
 short shorter large larger
-short shorter long shorter
+short shorter long longer
 short shorter loud louder
 short shorter low higher
 short shorter new new
@@ -994,7 +994,7 @@ small smaller hard harder
 small smaller heavy heavier
 small smaller high higher
 small smaller hot hotter
-small smaller large smaller
+small smaller large larger
 small smaller long shorter
 small smaller loud louder
 small smaller low higher
@@ -1128,7 +1128,7 @@ tight tighter cool cooler
 tight tighter deep deeper
 tight tighter easy easier
 tight tighter fast faster
-tight tighter good tighter
+tight tighter good better
 tight tighter great greater
 tight tighter hard harder
 tight tighter heavy heavier
@@ -1193,8 +1193,8 @@ warm warmer bad worse
 warm warmer big bigger
 warm warmer bright brighter
 warm warmer cheap cheaper
-warm warmer cold warmer
-warm warmer cool warmer
+warm warmer cold colder
+warm warmer cool cooler
 warm warmer deep deeper
 warm warmer easy easier
 warm warmer fast faster
@@ -1304,7 +1304,7 @@ young younger deep deeper
 young younger easy easier
 young younger fast slower
 young younger good better
-young younger great younger
+young younger great greatest
 young younger hard harder
 young younger heavy heavier
 young younger high higher

@@ -115,7 +115,7 @@ Bern Switzerland Havana cuba
 Bern Switzerland Helsinki finland
 Bern Switzerland Islamabad pakistan
 Bern Switzerland Kabul afghanistan
-Bern Switzerland London switzerland
+Bern Switzerland London belgium
 Bern Switzerland Madrid spain
 Bern Switzerland Moscow russia
 Bern Switzerland Oslo norway
@@ -147,7 +147,7 @@ Cairo Egypt Stockholm sweden
 Cairo Egypt Tehran iran
 Cairo Egypt Tokyo japan
 Cairo Egypt Athens greece
-Cairo Egypt Baghdad egypt
+Cairo Egypt Baghdad iraq
 Cairo Egypt Bangkok thailand
 Cairo Egypt Beijing china
 Cairo Egypt Berlin germany
@@ -287,9 +287,9 @@ Kabul Afghanistan Islamabad pakistan
 London England Madrid spain
 London England Moscow russia
 London England Oslo norway
-London England Ottawa england
+London England Ottawa canada
 London England Paris france
-London England Rome england
+London England Rome italy
 London England Stockholm sweden
 London England Tehran iran
 London England Tokyo japan
@@ -298,7 +298,7 @@ London England Baghdad iraq
 London England Bangkok thailand
 London England Beijing china
 London England Berlin germany
-London England Bern england
+London England Bern switzerland
 London England Cairo egypt
 London England Canberra australia
 London England Hanoi vietnam
@@ -390,7 +390,7 @@ Ottawa Canada Havana cuba
 Ottawa Canada Helsinki finland
 Ottawa Canada Islamabad pakistan
 Ottawa Canada Kabul afghanistan
-Ottawa Canada London canada
+Ottawa Canada London england
 Ottawa Canada Madrid spain
 Ottawa Canada Moscow russia
 Ottawa Canada Oslo norway
@@ -432,7 +432,7 @@ Rome Italy Havana cuba
 Rome Italy Helsinki finland
 Rome Italy Islamabad pakistan
 Rome Italy Kabul afghanistan
-Rome Italy London italy
+Rome Italy London england
 Rome Italy Madrid spain
 Rome Italy Moscow russia
 Rome Italy Oslo norway
