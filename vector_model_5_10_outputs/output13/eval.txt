@@ -1,0 +1,29 @@
+gram5-present-participle.txt
+ACCURACY: 77.55681818181817% (819/1056)
+gram1-adjective-to-adverb.txt
+ACCURACY: 53.0241935483871% (526/992)
+family.txt
+ACCURACY: 65.21739130434783% (330/506)
+gram8-plural.txt
+ACCURACY: 90.91591591591592% (1211/1332)
+gram3-comparative.txt
+ACCURACY: 89.4894894894895% (1192/1332)
+gram2-opposite.txt
+ACCURACY: 58.86699507389162% (478/812)
+gram4-superlative.txt
+ACCURACY: 64.70588235294117% (726/1122)
+capital-world.txt
+ACCURACY: 93.7444739168877% (4241/4524)
+city-in-state.txt
+ACCURACY: 75.43575192541549% (1861/2467)
+gram9-plural-verbs.txt
+ACCURACY: 74.36781609195403% (647/870)
+gram7-past-tense.txt
+ACCURACY: 78.2051282051282% (1220/1560)
+capital-common-countries.txt
+ACCURACY: 98.81422924901186% (500/506)
+gram6-nationality-adjective.txt
+ACCURACY: 96.1225766103815% (1537/1599)
+currency.txt
+ACCURACY: 41.685912240184756% (361/866)
+Total accuracy: 80.07060990585346% (15649/19544)

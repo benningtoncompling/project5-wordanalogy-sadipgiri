@@ -40,7 +40,11 @@ Among three similarities type:
     Using vector_model_5_10.txt:
         Euclidean(80.69484240687679%), Cosine(80.69484240687679%) and Avg(80.04502660663118%) Similarities gave slightly higher accuracy than Manhattan (79.83012689316415%)
 
-Since, vector_model_5_10.txt was already normalized; so, I didn't get to see accuracy differences there. However, I am still running larger word2vec model to further investigate normalization effect! I think its all about ACCURACY vs TIME COMPLEXITY tradeoffs and I consider there won't be big of a difference in accuracy. 
+    However, using vectormodel.txt (as you can see in output folders): there was very low accuracy since many words were missing! As a result, I didn't find it interesting enough to compare similarities as well as investigate effect of normalization.
+
+    Having said that, larger model (samplemodel.txt) gave approx 50% accuracy whereas it took very long time to even compute evaluation file for Euclidean Similarity without normalization. [Check: samplemodel_outputs folder for further details]
+
+Since, vector_model_5_10.txt was already normalized; so, I didn't get to see accuracy differences there. However, I am still running larger word2vec model (e.g. samplemodel.txt) to further investigate normalization effect! I think its all about ACCURACY vs TIME COMPLEXITY tradeoffs and I consider there won't be big of a difference in accuracy. 
 
 Approaches, Optimizations, Roadblocks:
 - At first, I used Pandas dataframe to read word2vec model; however, there was time complexity issues while comparing predicted word with all existing words. Therefore, I used dictionary with keys: words and values: vectors (represented by numpy array). Why numpy -> it does calcuation in C-level which is obviously faster than normal Python arithmetic.
